@@ -32,6 +32,10 @@ dofile(vim.g.base46_cache .. "statusline")
 require "options"
 require "autocmds"
 require("dap")
+require("config.lazy")
+require("config.options")
+require("config.keymaps")
+require("config.colors")
 
 vim.schedule(function()
   require "mappings"

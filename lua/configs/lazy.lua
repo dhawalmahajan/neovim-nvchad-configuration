@@ -1,3 +1,11 @@
+-- Load plugins
+require("lazy").setup({
+  spec = {
+    { import = "plugins" },
+    { import = "plugins.lsp" },
+  },
+  checker = { enabled = true, notify = false },
+})
 return {
   defaults = { lazy = true },
   install = { colorscheme = { "nvchad" } },
